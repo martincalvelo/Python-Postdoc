@@ -1,0 +1,11 @@
+1. python extract_indexes_v2.py -i frame.pdb -o QMindex.txt -s "((resid 723 and not name C O N H HA CA) or resid 729 or (resid 730 and name O1B O2B O3B O1A O2A O3A O5' C5' H9 H10 PB PA) or (resid 528 and not name C O N H HA CA CB CG HB2 HB3 HG2 HG3)) and not (resname WAT or type 'Na+' 'Cl-')"
+
+2. python extract_QM-MMlinks.py -i frame.pdb -o LINKS.txt -q "(resid 723 and name CB) or (resid 730 and name C5') or (resid 528 and name CD)" -m "(resid 723 and name CA) or (resid 730 and name C4') or (resid 528 and name CG)"
+
+3. python qmboxsize.py -i frame.pdb -s "((resid 723 and not name C O N H HA CA) or resid 729 or (resid 730 and name O1B O2B O3B O1A O2A O3A O5' C5' H9 H10 PB PA) or (resid 528 and not name C O N H HA CA CB CG HB2 HB3 HG2 HG3)) and not (resname WAT or type 'Na+' 'Cl-')"
+
+4º Change LJ parameters:
+parmed -p parm7 -i inputs_parmed_LJ.in
+
+5º Change charges:
+python mm_charges_correction.py

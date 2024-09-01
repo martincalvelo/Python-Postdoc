@@ -1,0 +1,4 @@
+changeLJSingleType :*@%HO 0.3019 0.047
+changeLJSingleType :WAT@H* 0.3019 0.047
+outparm parm_mod_LJ.prmtop
+quit
