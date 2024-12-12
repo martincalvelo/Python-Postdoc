@@ -11,3 +11,4 @@ This repository is organized depending on the project or software:
 2) MD_CPs: Creation of a topology for CG simulations of Cyclic Peptides. Juan R. Granja's Group.
 3) QM_Gaussian: Reaction mechanism. Collaboration with Mascareñas and Fernando's group.
 4) QM-MM_CP2K: Creation of hybrid QM/MM topology used during my postdoc in Carme Rovira's group. Scripts for printing Free energy surface (and others) as well.
+5) Clustering_gangliosides: Cluster analysis of gangliosides (GM1 and GM2) in a lipid bilayer. 
